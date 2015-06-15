@@ -121,16 +121,16 @@
   
 #if TARGET_OS_IPHONE
   // Configure the AVSession
-  AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-  NSError *err = NULL;
-  [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:&err];
-  if( err ){
-    NSLog(@"There was an error creating the audio session");
-  }
-  [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:NULL];
-  if( err ){
-    NSLog(@"There was an error sending the audio to the speakers");
-  }
+//  AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+//  NSError *err = NULL;
+//  [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:&err];
+//  if( err ){
+//    NSLog(@"There was an error creating the audio session");
+//  }
+//  [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:NULL];
+//  if( err ){
+//    NSLog(@"There was an error sending the audio to the speakers");
+//  }
 #elif TARGET_OS_MAC
 #endif
   
